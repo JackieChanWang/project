@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/outlets.css">
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route1.4.5.js"></script>
+    <script src="../js/fontSize.js"></script>
+</head>
+<body ng-controller="myCtrl">
+<section>
+    <header>
+        <p>发行网点</p>
+    </header>
+    <div class="north_China">
+        <img ng-src="{{obj.huabei.title_img}}" class="area">
+        <span ng-bind="obj.huabei.title"></span>
+        <img ng-src="{{obj.huabei.down}}" class="under">
+        <div class="imgs">
+            <div ng-repeat="item in obj.huabei.fenlei">
+                <img ng-src="{{item.img}}">
+                <p ng-bind="item.name"></p>
+            </div>
+        </div>
+    </div>
+    <div class="north_China">
+        <img ng-src="{{obj.dongbei.title_img}}" class="area">
+        <span>{{obj.dongbei.title}}</span>
+        <img ng-src="{{obj.dongbei.down}}" class="under">
+        <div class="imgs" ng-repeat="item in obj.dongbei.fenlei">
+            <div>
+                <img ng-src="{{item.img}}">
+                <p>{{item.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="north_China">
+        <img ng-src="{{obj.huadong.title_img}}" class="area">
+        <span ng-bind="obj.huadong.title"></span>
+        <img ng-src="{{obj.huadong.down}}" class="under">
+        <div class="imgs" ng-repeat="item in obj.huadong.fenlei">
+            <div>
+                <img ng-src="{{item.img}}">
+                <p ng-bind="item.name"></p>
+            </div>
+        </div>
+    </div>
+    <div class="north_China">
+        <img ng-src="{{obj.zhongnan.title_img}}" class="area">
+        <span ng-bind="obj.zhongnan.title"></span>
+        <img ng-src="{{obj.zhongnan.down}}" class="under">
+        <div class="imgs" ng-repeat="item in obj.zhongnan.fenlei">
+            <div>
+                <img ng-src="{{item.img}}">
+                <p ng-bind="item.name"></p>
+            </div>
+        </div>
+    </div>
+    <div class="north_China">
+        <img ng-src="{{obj.xinan.title_img}}" class="area">
+        <span ng-bind="obj.xinan.title"></span>
+        <img ng-src="{{obj.xinan.down}}" class="under">
+        <div class="imgs" ng-repeat="item in obj.xinan.fenlei">
+            <div>
+                <img ng-src="{{item.img}}">
+                <p ng-bind="item.name"></p>
+            </div>
+        </div>
+    </div>
+    <div class="north_China">
+        <img ng-src="{{obj.xibei.title_img}}" class="area">
+        <span ng-bind="obj.xibei.title"></span>
+        <img ng-src="{{obj.xibei.down}}" class="under">
+        <div class="imgs" ng-repeat="item in obj.xibei.fenlei">
+            <div>
+                <img ng-src="{{item.img}}">
+                <p ng-bind="item.name"></p>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="footer">
+    <a href="back_home.html"><img src="../img/img_house.png" class="home"></a>
+    <a href="back_home.html" class="home_write">首页</a>
+
+    <a href="atlas_information.html"><img src="../img/img_back.png" class="back"></a>
+    <a href="atlas_information.html" class="back_write">返回</a>
+</div>
+<script>
+    var app = angular.module("app", ["ngRoute"])
+
+    /*app.config(["$routeProvider", function ($routeProvider) {
+     //        $routeProvider
+     //                .when("/one", {
+     //                    templateUrl: "2.html"
+     //                })
+     //                .when("/two", {
+     //                    template: "<p>2222222</p>"
+     //                })
+     //                .when("/three", {
+     //                    template: "<p>3333333</p>"
+     //                })
+     //                .when("/four", {
+     //                    template: "<p>4444444</p>"
+     //                })
+     //                .otherwise({
+     //                    redirectTo: "/one"
+     //                })
+     }])*/
+    app.controller("myCtrl", function ($scope, $http) {
+
+        $http.get("../data/city.json").success(function (data) {
+//            console.log(data)
+            $scope.obj = data
+            console.log($scope.obj)
+//            console.log($scope.obj.huabei.title_img)
+//            console.log($scope.obj.huabei.down)
+
+
+        })
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+header {
+  width: 12rem;
+  height: 5rem;
+  background-image: url("../img/img_jf.jpg");
+  background-size: 100% 100%;
+  border-bottom: 1px solid #B1B1B1;
+}
+header .header_img {
+  float: left;
+  margin-left: 0.5rem;
+  margin-top: 1.43333333rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 1px solid #000;
+}
+header .header_img img {
+  width: 100%;
+  height: 100%;
+}
+header .header_p {
+  float: left;
+  margin-left: 0.6rem;
+  margin-top: 2rem;
+}
+header .header_p p {
+  font-size: 0.4rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+section {
+  box-sizing: border-box;
+  padding: 0.43333333rem 0.43333333rem 1.4rem 0.43333333rem;
+  background-color: #E6E6E6;
+  width: 12rem;
+}
+section .content_header {
+  height: 1.36666667rem;
+  line-height: 1.36666667rem;
+  text-align: center;
+  font-size: 0.26666667rem;
+  border-bottom: 1px solid #FFFFFF;
+  font-weight: 600;
+}
+section .content_content {
+  font-weight: 600;
+}
+section .content_content .p {
+  margin-top: 0.16666667rem;
+  line-height: 2.5;
+  font-size: 0.25rem;
+  display: flex;
+  color: #444444;
+  justify-content: space-around;
+}
+section .content_content .more {
+  font-size: 0.25rem;
+  line-height: 2;
+}
+section .content_content .more div p:first-child {
+  margin-top: 0.33333333rem;
+}
+section .bottom {
+  margin-top: 1.4rem;
+  height: 1rem;
+  width: 11.13333333rem;
+  background-color: #C30E13;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.3rem;
+}
+section .bottom a {
+  text-decoration: none;
+  color: #fff;
+}
+section .bottom img {
+  width: 0.5rem;
+  height: 0.5rem;
+  vertical-align: -0.11666667rem;
+  margin-right: 0.33333333rem;
+}

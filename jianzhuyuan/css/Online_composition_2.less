@@ -1,0 +1,123 @@
+@fs: 60rem;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  .header {
+    width: 100%;
+    height: 77/ @fs;
+    background-color: #0c1415;
+    text-align: center;
+    position: relative;
+    #left {
+      width: 24/ @fs;
+      height: 30/@fs;
+      background-image: url("../img/fh.jpg");
+      background-size: 100% 100%;
+      position: absolute;
+      left: 30/@fs;
+      top: 20/@fs;
+    }
+    span {
+      font-size: 16/@fs;
+      color: white;
+    }
+  }
+}
+
+content {
+  flex-grow: 1;
+  overflow: auto;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #e6e6e6;
+  padding: 22/@fs 17/@fs;
+  .frame {
+    //background-color: #e57e23;
+    width: 100%;
+    height: 1080/@fs;
+    .support {
+      display: flex;
+      justify-content: space-around;
+      padding: 22/@fs 17/@fs;
+      div {
+        width: 292/@fs;
+        height: 278/@fs;
+        border: 1px solid #c7c7c7;
+        padding: 6/@fs;
+        text-align: center;
+        img {
+          width: 280/@fs;
+          height: 185/@fs;
+        }
+        p {
+          font-size: 13/@fs;
+        }
+        span {
+          font-size: 11/@fs;
+          color: red;
+          position: relative;
+          top: -12/@fs;
+        }
+        del {
+          font-size: 11/@fs;
+          color: #888888;
+          position: relative;
+          top: -12/@fs;
+        }
+      }
+    }
+
+  }
+}
+
+footer {
+  .footer {
+    height: 77/@fs;
+    width: 100vw;
+    background-color: #0c1415;
+    position: fixed;
+    bottom: 0;
+    font-size: 16/@fs;
+    line-height: 1.5;
+    a {
+      text-decoration: none;
+    }
+    .home {
+      height: 41/@fs;
+      width: 44/@fs;
+      margin-left: 185/@fs;
+      margin-top: 11/@fs;
+      position: relative;
+    }
+    .home_write {
+      position: absolute;
+      left: 257/@fs;
+      top: 25/@fs;
+      color: white;
+
+    }
+
+    .back {
+      height: 41/@fs;
+      width: 44/@fs;
+      margin-left: 231/@fs;
+      margin-top: 11/@fs;
+      position: relative;
+    }
+    .back_write {
+      position: absolute;
+      left: 538/@fs;
+      top: 25/@fs;
+      color: white;
+
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "resan":"请求成功",
+  "title":"电子图书",
+  "fenlei":[
+    {
+      "id":"first",
+      "img":"../img/img_a.jpg",
+      "name":"体验试用"
+    },
+    {
+      "id":"second",
+      "img":"../img/img_b.jpg",
+      "name":"促销活动"
+    },
+    {
+      "id":"third",
+      "img":"../img/img_c.jpg",
+      "name":"应用案例"
+    },
+    {
+      "id":"fours",
+      "img":"../img/img_d.jpg",
+      "name":"服务咨询"
+    }
+  ]
+}

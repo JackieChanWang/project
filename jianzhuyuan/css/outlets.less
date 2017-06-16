@@ -1,0 +1,100 @@
+@fs:60rem;
+
+html,body{
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/img_bg.jpg");
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+section{
+  flex-grow: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 110/@fs;
+  header{
+    //height:112/@fs;
+    line-height:112/@fs;
+    font-size:34/@fs;
+    text-align: center;
+    color: #045499;
+    font-weight:600;
+  }
+  .north_China{
+    margin-left: 30/@fs;
+    margin-top: 78/@fs;
+    font-size:20/@fs;
+    .area{
+      margin-left: 14/@fs;
+      width:86/@fs;
+      height:86/@fs;
+    }
+    .under{
+      margin-left: 16/@fs;
+      width:20/@fs;
+      height:20/@fs;
+    }
+    .imgs{
+      display: block;
+      margin-top: 28/@fs;
+      div{
+        width: 33%;
+        float: left;
+        text-align: center;
+        margin-top: 0.2rem;
+        font-size:22/@fs;
+        line-height:1.5;
+        img{
+          width:134/@fs;
+          height:134/@fs;
+        }
+      }
+    }
+  }
+
+}
+.footer{
+  height: 77/@fs;
+  width: 100vw;
+  background-color: #0c1415;
+  position: fixed;
+  bottom: 0;
+  font-size: 16/@fs;
+  line-height: 1.5;
+  a{
+    text-decoration: none;
+  }
+  .home{
+    width: 44/@fs;
+    height: 41/@fs;
+    margin-left: 185/@fs;
+    margin-top: 11/@fs;
+    position: relative;
+  }
+  .home_write{
+    position: absolute;
+    left: 257/@fs;
+    top: 25/@fs;
+    color: white;
+
+  }
+
+  .back{
+    height: 41/@fs;
+    width: 44/@fs;
+    margin-left: 231/@fs;
+    margin-top: 11/@fs;
+    position: relative;
+  }
+  .back_write{
+    position: absolute;
+    left: 538/@fs;
+    top: 25/@fs;
+    color: white;
+
+  }
+}

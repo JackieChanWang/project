@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/Enrollment_information.css">
+</head>
+<body ng-controller="myCtrl">
+
+<content>
+    <div id="student">
+        <img src="../img/img_friend.jpg" alt="">
+    </div>
+   <div class="frame">
+       <div class="classification">
+           <img ng-src="{{arr.master.img}}" alt="">
+           <ul ng-repeat="obj in arr.master.fenlei track by $index">
+               <li ng-bind="obj.content_a"></li>
+               <li ng-bind="" obj.content_b></li>
+               <li ng-bind="obj.content_c"></li>
+               <li style="color: #d80056" ng-bind="obj.content_d"></li>
+               <li ng-bind="obj.content_e"></li>
+               <li ng-bind="obj.content_f"></li>
+           </ul>
+           <div style="background-color: #d80056"></div>
+       </div>
+       <div class="classification">
+           <img ng-src="{{arr.doctor.img}}" alt="">
+           <ul ng-repeat="obj in arr.doctor.fenlei track by $index">
+               <li ng-bind="obj.content_a"></li>
+               <li ng-bind="obj.content_b"></li>
+               <li ng-bind="obj.content_c"></li>
+           </ul>
+           <div style="background-color: #0d7165"></div>
+       </div>
+       <div class="classification">
+           <img ng-src="{{arr.emba.img}}" alt="">
+           <ul ng-repeat="obj in arr.emba.fenlei track by $index">
+               <li ng-bind="obj.content_a"></li>
+               <li ng-bind="obj.content_b"></li>
+               <li ng-bind="obj.content_c"></li>
+               <li ng-bind="obj.content_d"></li>
+               <li ng-bind="obj.content_e"></li>
+           </ul>
+           <div style="background-color: #236194"></div>
+       </div>
+       <div class="classification">
+           <img ng-src="{{arr.mba.img}}" alt="">
+           <ul ng-repeat="obj in arr.mba.fenlei track by $index">
+               <li ng-bind="obj.content_a"></li>
+           </ul>
+           <div style="background-color: #e85526"></div>
+       </div>
+       <div class="classification">
+           <img ng-src="{{arr.dba.img}}" alt="">
+           <ul ng-repeat="obj in arr.dba.fenlei track by $index">
+               <li ng-bind="obj.content_a"></li>
+               <li ng-bind="obj.content_b"></li>
+               <li ng-bind="obj.content_c"></li>
+               <li ng-bind="obj.content_d"></li>
+               <li ng-bind="obj.content_e"></li>
+           </ul>
+           <div style="background-color: #08205d"></div>
+       </div>
+       <div class="classification">
+           <img ng-src="{{arr.senior.img}}" alt="">
+           <ul ng-repeat="obj in arr.senior.fenlei track by $index">
+               <li ng-bind="obj.content_a"></li>
+               <li ng-bind="obj.content_b"></li>
+           </ul>
+           <div style="background-color: #663330"></div>
+       </div>
+   </div>
+</content>
+
+<footer>
+    <div class="footer">
+        <a href="back_home.html"><img src="../img/img_house.png" alt="" class="home"></a>
+        <a href="back_home.html" class="home_write">首页</a>
+
+        <a href="back_home.html"><img src="../img/img_back.png" alt="" class="back"></a>
+        <a href="back_home.html" class="back_write">返回</a>
+    </div>
+</footer>
+
+<script src="../js/fontSize.js"></script>
+<!--<script src="../js/demo01.js"></script>-->
+<script src="../js/angular.min.js"></script>
+<script src="../js/angular-route1.4.5.js"></script>
+<script src="../js/jquery-3.1.1.js"></script>
+<script>
+    var app = angular.module("app", ["ngRoute"]);
+    app.controller("myCtrl", function ($scope, $http) {
+        $scope.arr = null;
+        $scope.arr1 = null;
+        $http.get("../data/data1.json").success(function (data) {
+//            console.log(data);
+            $scope.arr = data;
+            console.log($scope.arr);
+
+            console.log($scope.arr.senior);
+            console.log($scope.arr.senior.fenlei);
+            $.each($scope.arr.senior.fenlei, function (i, obj) {
+                console.log(obj);
+            })
+        })
+    })
+</script>
+
+</body>
+</html>

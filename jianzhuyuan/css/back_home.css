@@ -1,0 +1,44 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+.home_page {
+  background: url("../img/shouye_background.jpg");
+  background-size: 100% 100%;
+  height: 100vh;
+  font-size: 0.5rem;
+  color: black;
+}
+.home_page .logo {
+  width: 100vw;
+}
+.home_page .content {
+  margin-top: 3.08333333rem;
+  height: 54vh;
+  width: 100vw;
+  position: relative;
+}
+.home_page .content .atlas {
+  position: absolute;
+  top: 38%;
+  left: 3.36666667rem;
+}
+.home_page .content .atlas p:nth-child(1) {
+  padding-bottom: 0.25rem;
+}
+.home_page .content .member {
+  position: absolute;
+  top: 38%;
+  left: 7.5rem;
+}
+.home_page .content .member p:nth-child(1) {
+  padding-bottom: 0.25rem;
+}
+.home_page .content .library {
+  position: absolute;
+  top: 72%;
+  left: 5.53333333rem;
+}
+.home_page .content .library p:nth-child(1) {
+  padding-bottom: 0.25rem;
+}

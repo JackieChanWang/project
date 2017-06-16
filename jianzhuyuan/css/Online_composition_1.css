@@ -1,0 +1,151 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+header .header {
+  width: 100%;
+  height: 1.28333333rem;
+  background-color: #0c1415;
+  text-align: center;
+  position: relative;
+}
+header .header #left {
+  width: 0.4rem;
+  height: 0.5rem;
+  background-image: url("../img/fh.jpg");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.33333333rem;
+}
+header .header span {
+  font-size: 0.26666667rem;
+  color: white;
+}
+content {
+  flex-grow: 1;
+  overflow: auto;
+  display: -webkit-flex;
+  display: flex;
+}
+content div:nth-of-type(1) {
+  text-align: center;
+  position: relative;
+  /*
+    ul > li:nth-of-type(3) {
+      background-color: #5e6869;
+    }
+    ul > li:nth-last-child(3) {
+      background-color: #5e6869;
+    }
+    */
+  /*
+    ul > li:nth-of-type(3) > p {
+      color: #fefbc6;
+    }
+    ul > li:nth-last-of-type(3) > p {
+      color: #fefbc6;
+    }
+    */
+}
+content div:nth-of-type(1) .Triangle_1 {
+  border: 0.41666667rem #e6e6e6 solid;
+  border-color: transparent #e6e6e6 transparent transparent;
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+}
+content div:nth-of-type(1) ul {
+  background-color: #6a7475;
+  width: 3.75rem;
+  height: 38rem;
+}
+content div:nth-of-type(1) ul > li {
+  height: 3rem;
+  line-height: 1.5;
+}
+content div:nth-of-type(1) ul > li:first-child {
+  background-color: #5e6869;
+}
+content div:nth-of-type(1) ul > li > img {
+  width: 0.65rem;
+  height: 0.55rem;
+}
+content div:nth-of-type(1) ul > li > p {
+  font-size: 0.26666667rem;
+  color: white;
+}
+content div:nth-of-type(1) ul > li:first-child > p {
+  color: #fefbc6;
+}
+content #big {
+  position: relative;
+}
+content #big .Total {
+  position: fixed;
+  background-color: #e6e6e6;
+  height: 32rem;
+  padding: 0.3rem 0;
+}
+content #big .Total .frame {
+  display: -webkit-flex;
+  width: 8.25rem;
+  display: flex;
+  padding: 0.5rem 0;
+}
+content #big .Total .frame div {
+  /* height: 2rem;
+           width: 0;*/
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #c0c5c3;
+  flex-grow: 1;
+  margin: -0.3rem 0.21666667rem;
+  line-height: 1.2;
+}
+content #big .Total .frame div p {
+  font-size: 0.23333333rem;
+}
+footer .footer {
+  height: 1.28333333rem;
+  width: 100vw;
+  background-color: #0c1415;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.26666667rem;
+  line-height: 1.5;
+}
+footer .footer a {
+  text-decoration: none;
+}
+footer .footer .home {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.08333333rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+footer .footer .home_write {
+  position: absolute;
+  left: 4.28333333rem;
+  top: 0.41666667rem;
+  color: white;
+}
+footer .footer .back {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.85rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+footer .footer .back_write {
+  position: absolute;
+  left: 8.96666667rem;
+  top: 0.41666667rem;
+  color: white;
+}

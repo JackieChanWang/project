@@ -1,0 +1,141 @@
+a {
+  text-decoration: none;
+  color: #fffbc7;
+}
+body {
+  background: url("../img/img_backgroundimg.jpg") no-repeat;
+  height: 100vh;
+  background-size: 100% 100%;
+  position: relative;
+}
+.nav .logo {
+  width: 100vw;
+}
+.nav p {
+  font-size: 0.66666667rem;
+  color: #fffbc7;
+  margin-top: 2.58333333rem;
+  text-align: center ;
+}
+.content {
+  height: 5.68333333rem;
+  width: 7.36666667rem;
+  margin-top: 1.86666667rem;
+  margin-left: 2.28333333rem;
+  font-size: 0.38133333rem;
+  color: #fffbc7;
+}
+.content .content_top {
+  width: 7.36666667rem;
+  height: 1.86666667rem;
+  position: relative;
+}
+.content .content_top img {
+  height: 0.83333333rem;
+}
+.content .content_top .experience {
+  float: left;
+  height: 1.86666667rem;
+  width: 1.61666667rem;
+}
+.content .content_top .experience img {
+  margin-left: 0.4rem;
+}
+.content .content_top .experience p {
+  margin-top: 0.51666667rem;
+}
+.content .content_top .line_experience {
+  position: absolute;
+  top: 0.4rem;
+  left: 3.71666667rem;
+  width: 0;
+  height: 1.23333333rem;
+  border: 0.03333333rem solid #fffbc7;
+}
+.content .content_top .promotion {
+  float: left;
+  height: 1.86666667rem;
+  width: 1.61666667rem;
+  margin-left: 4.11666667rem;
+}
+.content .content_top .promotion img {
+  margin-left: 0.3rem;
+}
+.content .content_top .promotion p {
+  margin-top: 0.51666667rem;
+}
+.content .content_bottom {
+  height: 1.88333333rem;
+  width: 7.36666667rem;
+  margin-top: 1.91666667rem;
+  position: relative;
+}
+.content .content_bottom img {
+  height: 1.11666667rem;
+}
+.content .content_bottom .case {
+  float: left;
+  height: 1.86666667rem;
+  width: 1.61666667rem;
+}
+.content .content_bottom .case img {
+  margin-left: 0.3rem;
+}
+.content .content_bottom .case p {
+  margin-top: 0.45rem;
+}
+.content .content_bottom .line_case {
+  position: absolute;
+  top: 0.4rem;
+  left: 3.71666667rem;
+  width: 0;
+  height: 1.23333333rem;
+  border: 0.03333333rem solid #fffbc7;
+}
+.content .content_bottom .advisory {
+  float: left;
+  height: 1.86666667rem;
+  width: 1.61666667rem;
+  margin-left: 4.11666667rem;
+}
+.content .content_bottom .advisory img {
+  margin-left: 0.3rem;
+}
+.content .content_bottom .advisory p {
+  margin-top: 0.45rem;
+}
+.footer {
+  height: 1.28333333rem;
+  width: 100vw;
+  background-color: #0c1415;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.26666667rem;
+  line-height: 1.5;
+}
+.footer .home {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.08333333rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+.footer .home_write {
+  position: absolute;
+  left: 4.28333333rem;
+  top: 0.41666667rem;
+  color: white;
+}
+.footer .back {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.85rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+.footer .back_write {
+  position: absolute;
+  left: 8.96666667rem;
+  top: 0.41666667rem;
+  color: white;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/integral.css">
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route1.4.5.js"></script>
+    <script src="../js/jquery-3.1.1.js"></script>
+    <script src="../js/fontSize.js"></script>
+</head>
+<body ng-controller="myCtrl">
+<header>
+    <div class="header_img">
+        <img src="../img/img_touxiang.jpg" alt="">
+    </div>
+    <div class="header_p">
+        <p>server_98765</p>
+        <p>723分</p>
+    </div>
+</header>
+<section>
+    <div class="content_header">
+        <p>{{obj.title}}</p>
+    </div>
+    <div class="content_content">
+        <p class="p">
+            <span>{{obj.editor}}</span>
+            <span>{{obj.time}}</span>
+            <span>{{obj.views}}</span>
+        </p>
+        <div class="more" ng-repeat="item in obj">
+            <div>
+                <p>{{item.title}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_a}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_b}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_c}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_d}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_e}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_f}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_g}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_h}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_i}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_j}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_k}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_l}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_m}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_n}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_o}}</p>
+                <p ng-repeat="obj in (item.fenlei)">{{obj.content_p}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <a href="register.html"><img src="../img/fan.png" alt=""></a>
+        <span><a href="register.html">返回图集注册页面</a></span>
+    </div>
+</section>
+<div ng-view=""></div>
+<script>
+    var app = angular.module("app", ["ngRoute"])
+
+    app.config(["$routeProvider", function ($routeProvider) {
+//        $routeProvider
+//                .when("/one", {
+//                    templateUrl: "2.html"
+//                })
+//                .when("/two", {
+//                    template: "<p>2222222</p>"
+//                })
+//                .when("/three", {
+//                    template: "<p>3333333</p>"
+//                })
+//                .when("/four", {
+//                    template: "<p>4444444</p>"
+//                })
+//                .otherwise({
+//                    redirectTo: "/one"
+//                })
+    }])
+    app.controller("myCtrl", function ($scope, $http) {
+
+        $http.get("../data/international_club.json").success(function (data) {
+//            console.log(data)
+            $scope.obj = data
+            console.log($scope.obj)
+        })
+
+
+    })
+</script>
+</body>
+</html>

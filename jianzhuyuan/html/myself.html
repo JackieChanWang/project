@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/myself2.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route1.4.5.js"></script>
+    <script src="../js/get2.js"></script>
+</head>
+<body ng-controller="myCtrl">
+<header>
+    <img ng-src="{{str0}}" alt="" class="header_bg">
+    <img ng-src="{{str}}" alt="" class="header_tx">
+    <p>{{str1}}</p>
+</header>
+<div class="content">
+    <div class="person">
+        <span class="person_gr">个人信息</span>
+        <img src="../img/pen.png" alt="" id="person_img">
+        <span class="person_xg" id="person_xx">修改</span>
+    </div>
+    <p class="content_zc">* 注：星号为必填项目</p>
+    <div class="content_wc">
+        <span>修改完成</span>
+    </div>
+    <ul id="content_ul">
+        <li>
+            <span class="content_sp">真实姓名：</span>
+            <input type="text" value="{{str2}}">
+            <span class="content_star">*</span></li>
+        <li>
+            <span class="content_sp">性别：</span>
+            <span class="content_sex">男</span>
+            <input type="radio" class="content_radio">
+            <span class="content_women">女</span>
+            <input type="radio" class="content_radio">保密
+        </li>
+        <li>
+            <span class="content_sp">专业：</span>
+            <select>
+                <option value="" ng-repeat="i in str3">{{i.name}}</option>
+            </select>
+            <span class="content_star">*</span>
+        </li>
+        <li>
+            <span class="content_sp">单位：</span>
+            <input type="text">
+            <span class="content_star">*</span>
+        </li>
+        <li>
+            <span class="content_sp">部门：</span>
+            <input type="text">
+        </li>
+        <li>
+            <span class="content_sp">职位：</span>
+            <input type="text">
+        </li>
+        <li><span class="content_sp">昵称：</span>
+            <input type="text">
+        </li>
+        <li><span class="content_sp">电话：</span>
+            <input type="text">
+            <span class="content_star">*</span>
+        </li>
+        <li><span class="content_sp">传真：</span>
+            <input type="text">
+        </li>
+        <li><span class="content_sp">邮编：</span>
+            <input type="text"></li>
+        <li><span class="content_sp">地址：</span>
+            <input type="text">
+            <span class="content_star">*</span>
+        </li>
+        <li id="content_oli">
+            <span class="content_sp"></span>
+            <input type="submit" value="确认提交" class="content_tj">
+        </li>
+    </ul>
+</div>
+<footer>
+    <div id="footer_first">
+        <a href="back_home.html"><img src="../img/img_house.png" alt=""></a>
+        <a href="back_home.html"><span>首页</span></a>
+    </div>
+    <div id="footer_last">
+        <a href="service.html"><img src="../img/img_back.png" alt=""></a>
+        <a href="service.html"><span>返回</span></a>
+    </div>
+</footer>
+<script src="../js/fontSize.js"></script>
+<script>
+    var oImport = document.getElementById("person_xx");
+    console.log(oImport);
+    var oContent_ul=document.querySelector(".content #content_ul");
+    console.log(oContent_ul);
+    var oContent_oli=document.getElementById("content_oli");
+    console.log(oContent_oli);
+    var oContent_wc=document.querySelector(" .content .content_wc");
+    var oPerson_img=document.querySelector("#person_img")
+    oImport.onclick=function () {
+        oImport.style.color="red"
+        oContent_ul.style.display="block";
+    }
+    oPerson_img.onclick=function () {
+        oImport.style.color="red"
+        oContent_ul.style.display="block";
+    }
+    oContent_oli.onclick=function () {
+        oContent_ul.style.display="none";
+        oContent_wc.style.display="block";
+    }
+    oContent_wc.onclick=function () {
+        oContent_wc.style.display="none"
+    }
+</script>
+</body>
+</html>

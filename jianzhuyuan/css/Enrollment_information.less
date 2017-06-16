@@ -1,0 +1,87 @@
+@fs: 60rem;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  ul, ol {
+    list-style: disc;
+  }
+}
+
+content {
+  flex-grow: 1;
+  overflow: auto;
+  background-color: #aba9aa;
+  #student img {
+    width: 100%;
+    height: 464/@fs;
+  }
+  .frame {
+    height:2000/@fs;
+    .classification {
+      padding: 30/@fs 28/@fs;
+      img {
+        width: 252/@fs;
+        height: 59/@fs;
+      }
+      ul {
+        margin: 27/@fs 33/@fs;
+        font-size: 14/@fs;
+        line-height: 2;
+      }
+      div {
+        width: 100%;
+        height: 1px;
+      }
+    }
+  }
+
+}
+
+footer {
+  .footer {
+    height: 77/@fs;
+    width: 100vw;
+    background-color: #0c1415;
+    position: fixed;
+    bottom: 0;
+    font-size: 16/@fs;
+    line-height: 1.5;
+    a {
+      text-decoration: none;
+    }
+    .home {
+      height: 41/@fs;
+      width: 44/@fs;
+      margin-left: 185/@fs;
+      margin-top: 11/@fs;
+      position: relative;
+    }
+    .home_write {
+      position: absolute;
+      left: 257/@fs;
+      top: 25/@fs;
+      color: white;
+
+    }
+
+    .back {
+      height: 41/@fs;
+      width: 44/@fs;
+      margin-left: 231/@fs;
+      margin-top: 11/@fs;
+      position: relative;
+    }
+    .back_write {
+      position: absolute;
+      left: 538/@fs;
+      top: 25/@fs;
+      color: white;
+
+    }
+  }
+}

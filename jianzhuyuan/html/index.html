@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/fontSize.js"></script>
+</head>
+<body>
+<div class="link_page">
+    <div class="jump">
+        <p>跳过<span>3</span>s</p>
+    </div>
+</div>
+<div class="home_page">
+    <img src="../img/logo.png" alt="" class="logo">
+    <div class="content">
+        <div class="atlas">
+            <p><a href="atlas_information.html">图集</a></p>
+            <p><a href="atlas_information.html">信息</a></p>
+        </div>
+        <div class="member">
+            <p><a href="atlas_information.html">会员</a></p>
+            <p><a href="atlas_information.html">服务</a></p>
+        </div>
+        <div class="stacks">
+            <p><a href="atlas_information.html">电子</a></p>
+            <p><a href="atlas_information.html">书库</a></p>
+        </div>
+    </div>
+
+</div>
+<script>
+
+//    3秒过后自动跳转
+    var link_page = document.querySelector(".link_page");
+    var home_page = document.querySelector(".home_page");
+    var jump = document.querySelector(".jump");
+    var img = document.querySelector(".link_page img");
+    setTimeout(function () {
+        link_page.style.display="none";
+        home_page.style.display="block"
+    },3000);
+//
+//    //倒计时3秒
+    var timer=null;
+    timer = setInterval(move,1000);
+    var span = document.querySelector("span");
+    function move(){
+        span.innerHTML--;
+        if(span.innerHTML==0){
+            clearInterval(timer)
+        }
+    }
+    //点击清除引导页，跳转到首页
+    var p = document.querySelector(".link_page .jump p");
+    p.onclick=function () {
+        clearInterval(timer);
+        home_page.style.display="block";
+        link_page.style.display="none";
+//        clearInterval(timer)
+    }
+
+
+</script>
+</body>
+</html>

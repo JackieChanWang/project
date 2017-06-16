@@ -1,0 +1,318 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+header .header {
+  width: 100%;
+  height: 1.28333333rem;
+  background-color: #0c1415;
+  text-align: center;
+  position: relative;
+}
+header .header #left {
+  width: 0.4rem;
+  height: 0.5rem;
+  background-image: url("../img/fh.jpg");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.33333333rem;
+}
+header .header span {
+  font-size: 0.26666667rem;
+  color: white;
+}
+content {
+  flex-grow: 1;
+  overflow: auto;
+  background-color: #e6e6e6;
+}
+content #big {
+  width: 100%;
+  height: 12.4rem;
+  background-color: white;
+}
+content #big #img {
+  width: 100%;
+  height: 7.36666667rem;
+  background-image: url("../img/img_jf.jpg");
+  background-size: 100% 100%;
+  position: relative;
+}
+content #big #img img {
+  width: 4.66666667rem;
+  height: 3.31666667rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+content #big #small {
+  width: 100%;
+  height: 3.88333333rem;
+  border-bottom: 1px solid #c7c7c7;
+  position: relative;
+}
+content #big #small p {
+  font-size: 0.46666667rem;
+  padding: 0.78333333rem 0.21666667rem;
+}
+content #big #small #purchase {
+  width: 0.83333333rem;
+  height: 0.66666667rem;
+  background-image: url("../img/img_gwc.jpg");
+  background-size: 100% 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0.83333333rem 1.31666667rem;
+}
+content #big #small #purchase p {
+  width: 1rem;
+  margin: 0.16666667rem -0.16666667rem;
+  color: red;
+}
+content #big #small #purchase #line {
+  width: 2px;
+  height: 1.78333333rem;
+  background: #e7e7e7;
+  position: absolute;
+  right: 1.66666667rem;
+  top: -0.5rem;
+}
+content #big #small span {
+  margin-left: 0.25rem;
+}
+content #big #small span,
+content #big #small del {
+  font-size: 0.46666667rem;
+}
+content #big #small span:nth-of-type(1) {
+  display: block;
+  color: red;
+}
+content #big #small span:nth-of-type(2),
+content #big #small del {
+  color: lightgrey;
+}
+content #big #case {
+  width: 100%;
+  height: 1.15rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  line-height: 2.5;
+}
+content #big #case p {
+  font-size: 0.45rem;
+  color: #cacaca;
+}
+content #essay #essay_1 {
+  padding: 0.6rem 0.51666667rem;
+  line-height: 2;
+}
+content #essay #essay_1 p:nth-of-type(1) {
+  font-size: 0.41666667rem;
+}
+content #essay #essay_1 ul > li {
+  font-size: 0.41666667rem;
+}
+content #essay #essay_1 ul > li p {
+  margin-left: 2.08333333rem;
+}
+content #essay #essay_2 {
+  padding: 0.6rem 0.51666667rem;
+  line-height: 2;
+}
+content #essay #essay_2 p:nth-of-type(1) {
+  font-size: 0.45rem;
+}
+content #essay #essay_2 p:nth-of-type(1) img {
+  vertical-align: initial;
+  margin-left: 0.55rem;
+  width: 0.46666667rem;
+  height: 0.46666667rem;
+}
+content #essay #essay_2 p:nth-of-type(1) span {
+  font-size: 0.21666667rem;
+  color: red;
+}
+content #essay #essay_2 p:nth-of-type(2) {
+  font-size: 0.41666667rem;
+  text-indent: 1.03333333rem;
+}
+content #essay #essay_3 {
+  padding: 0.6rem 0.51666667rem;
+  line-height: 2;
+}
+content #essay #essay_3 p:nth-of-type(1) {
+  font-size: 0.45rem;
+}
+content #essay #essay_3 p:nth-of-type(1) img {
+  vertical-align: initial;
+  margin-left: 0.55rem;
+  width: 0.46666667rem;
+  height: 0.46666667rem;
+}
+content #essay #essay_3 p:nth-of-type(1) span {
+  font-size: 0.21666667rem;
+  color: red;
+}
+content #essay #essay_3 ul > li {
+  font-size: 0.33333333rem;
+}
+content #essay #essay_3 ul > li span {
+  float: right;
+}
+content #essay #essay_4 {
+  padding: 0.6rem 0.51666667rem;
+  line-height: 2;
+}
+content #essay #essay_4 p:nth-of-type(1) {
+  font-size: 0.45rem;
+}
+content #essay #essay_4 p:nth-of-type(1) img {
+  vertical-align: initial;
+  margin-left: 0.55rem;
+  width: 0.46666667rem;
+  height: 0.46666667rem;
+}
+content #essay #essay_4 p:nth-of-type(1) span {
+  font-size: 0.21666667rem;
+  color: red;
+}
+content #essay #essay_4 #image {
+  padding: 0.83333333rem;
+}
+content #essay #essay_4 #image img {
+  width: 4.16666667rem;
+  height: 2.93333333rem;
+  margin: 0 0.16666667rem;
+}
+content #essay .Cart {
+  /* border: 1px solid #000;*/
+  border-radius: 5px;
+  width: 6.63333333rem;
+  height: 2.56666667rem;
+  background-color: #3d3d3d;
+  position: fixed;
+  bottom: 4.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  line-height: 1.5;
+}
+content #essay .Cart i {
+  font-size: 0.83333333rem;
+  color: #ec0000;
+}
+content #essay .Cart p {
+  color: white;
+  font-size: 0.43333333rem;
+}
+footer #essay_5 {
+  width: 100%;
+  height: 1.46666667rem;
+  background-color: white;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+footer #essay_5 div {
+  width: 30%;
+  height: 1.13333333rem;
+  text-align: center;
+  line-height: 3;
+}
+footer #essay_5 div:nth-of-type(1) {
+  display: flex;
+  font-size: 0.43333333rem;
+}
+footer #essay_5 div:nth-of-type(1) span {
+  color: #3e7798;
+}
+footer #essay_5 div:nth-of-type(1) span:nth-of-type(2) {
+  display: inline-block;
+  width: 0.5rem;
+}
+footer #essay_5 div:nth-of-type(1) button {
+  width: 0.56666667rem;
+  height: 0.56666667rem;
+  margin: 0.33333333rem 0.16666667rem;
+  outline: none;
+  line-height: 0.4;
+}
+footer #essay_5 div:nth-of-type(1) button:nth-of-type(1) {
+  text-indent: -0.06rem;
+  background-color: #f35212;
+}
+footer #essay_5 div:nth-of-type(1) button:nth-of-type(2) {
+  text-indent: -0.1rem;
+  background-color: #3fbf05;
+}
+footer #essay_5 div:nth-of-type(2) {
+  background: #ff9502;
+  color: white;
+  font-size: 0.43333333rem;
+}
+footer #essay_5 div:nth-of-type(3) {
+  background: #ff5102;
+  color: white;
+  font-size: 0.43333333rem;
+}
+footer #essay_5 div:nth-of-type(3) a {
+  color: white;
+  text-decoration: none;
+}
+footer #essay_6 {
+  width: 100%;
+  height: 1.46666667rem;
+  background-color: #0c1415;
+  position: relative;
+}
+footer #essay_6 .footer {
+  height: 1.28333333rem;
+  width: 100vw;
+  background-color: #0c1415;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.26666667rem;
+  line-height: 1.5;
+}
+footer #essay_6 .footer a {
+  text-decoration: none;
+}
+footer #essay_6 .footer .home {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.08333333rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+footer #essay_6 .footer .home_write {
+  position: absolute;
+  left: 4.28333333rem;
+  top: 0.41666667rem;
+  color: white;
+}
+footer #essay_6 .footer .back {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.85rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+footer #essay_6 .footer .back_write {
+  position: absolute;
+  left: 8.96666667rem;
+  top: 0.41666667rem;
+  color: white;
+}

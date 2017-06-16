@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/verify.css">
+</head>
+<body>
+<div id="remind">
+    <div id="picture">
+        <img src="../img/guan.png" alt="" id="star">
+        <img src="../img/img_xingshi.jpg" alt="" id="close">
+        <p>无次记录，此书为盗
+            版跳转"<span>盗版举报</span>"
+        </p>
+    </div>
+</div>
+<header>
+    <span>图集验证</span>
+</header>
+<content>
+    <div id="attention">
+        <img src="../img/img_xingkong.jpg" alt=""> <span>图集防伪码</span>
+        <p>将您在书店所买的防伪码输入在下方验证，我们将跟军您输入的</p>
+           <p>号码进行系统识别，从而告诉您书籍的真伪。</p>
+    </div>
+    <form action="">
+        <input type="text" placeholder="&nbsp;请输入书籍防伪码...">
+        <input type="text" placeholder="&nbsp;请输入验证码">
+        <input id="submit" value="点击验证">
+    </form>
+</content>
+<footer>
+    <div id="footer_first">
+        <a href="back_home.html"><img src="../img/img_house.png" alt=""></a>
+        <a href="back_home.html"><span>首页</span></a>
+    </div>
+    <div id="footer_last">
+        <a href="atlas_information.html"><img src="../img/img_back.png" alt=""></a>
+        <a href="atlas_information.html"><span>返回</span></a>
+    </div>
+</footer>
+<script src="../js/fontSize.js"></script>
+<script>
+    var osubmit= document.getElementById("submit");
+    var star = document.getElementById("star")
+    var oremind = document.getElementById("remind");
+//    console.log(img1)
+    osubmit.onclick = function () {
+        oremind.style.display = "block";
+    }
+    star.onclick = function () {
+        oremind.style.display = "none";
+    }
+</script>
+</body>
+</html>

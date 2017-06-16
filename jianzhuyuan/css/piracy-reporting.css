@@ -1,0 +1,191 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: #E6E6E6;
+}
+html header,
+body header {
+  width: 100%;
+  height: 1.83333333rem;
+}
+html header div,
+body header div {
+  margin-top: 0.5rem;
+  height: 1.33333333rem;
+  background-color: white;
+  text-align: center;
+  line-height: 1.33333333rem;
+  font-size: 0.44333333rem;
+}
+html content,
+body content {
+  flex-grow: 1;
+  width: 100%;
+  overflow: auto;
+}
+html content .content_first,
+body content .content_first {
+  width: 100%;
+  height: 7.16666667rem;
+}
+html content .content_first .content_son img,
+body content .content_first .content_son img {
+  margin-left: 0.21666667rem;
+}
+html content .content_first .content_son span,
+body content .content_first .content_son span {
+  font-size: 0.26666667rem;
+}
+html content .content_first .content_son_two,
+body content .content_first .content_son_two {
+  margin-top: 0.51666667rem;
+}
+html content .content_first .content_son_two div,
+body content .content_first .content_son_two div {
+  width: 100%;
+  height: 1.16666667rem;
+  font-size: 0.26666667rem;
+}
+html content .content_first .content_son_two div #content_son_two_button,
+body content .content_first .content_son_two div #content_son_two_button {
+  background-color: #C30D12;
+  color: white;
+  border: none;
+}
+html content .content_first .content_son_two div span,
+body content .content_first .content_son_two div span {
+  display: inline-block;
+  width: 1.7rem;
+  text-align: right;
+  padding-left: 0.7rem;
+}
+html content .content_first .content_son_two div input,
+body content .content_first .content_son_two div input {
+  height: 0.76666667rem;
+  width: 5.16666667rem;
+  outline: none;
+  border: 0.01666667rem solid #b6b6b6;
+}
+html content .content_second,
+body content .content_second {
+  width: 100%;
+  height: 1.05rem;
+  line-height: 1.05rem;
+  font-size: 0.26666667rem;
+}
+html content .content_second span,
+body content .content_second span {
+  margin-left: 1.08333333rem;
+}
+html content .content_last,
+body content .content_last {
+  width: 100%;
+  height: 6.3rem;
+  font-size: 0.26666667rem;
+}
+html content .content_last .content_last_son,
+body content .content_last .content_last_son {
+  line-height: 0.5rem;
+  height: 0.5rem;
+  margin-bottom: 0.41666667rem;
+}
+html content .content_last .content_last_son #checkbo,
+body content .content_last .content_last_son #checkbo {
+  margin-left: 1.08333333rem;
+}
+html content .content_last .content_last_son input,
+body content .content_last .content_last_son input {
+  border-radius: 50%;
+  height: 0.33333333rem;
+}
+html content .content_last .content_last_son span,
+body content .content_last .content_last_son span {
+  margin-right: 0.75rem;
+  margin-left: 0.16666667rem;
+}
+html content .content_last textarea,
+body content .content_last textarea {
+  width: 95%;
+  height: 3.48333333rem;
+  margin-left: 0.16666667rem;
+}
+html content .content_last button,
+body content .content_last button {
+  width: 95%;
+  height: 0.98333333rem;
+  margin-left: 0.16666667rem;
+  background-color: #C30D12;
+  outline: none;
+  border: none;
+  color: white;
+  margin-top: 0.56666667rem;
+}
+html footer,
+body footer {
+  height: 1.28333333rem;
+  width: 100%;
+  background-color: #0C1415;
+  line-height: 1.5;
+}
+html footer a,
+body footer a {
+  text-decoration: none;
+}
+html footer #footer_last,
+body footer #footer_last {
+  width: 50%;
+  height: 1.28333333rem;
+  float: left;
+  position: relative;
+}
+html footer #footer_last img,
+body footer #footer_last img {
+  width: 0.73333333rem;
+  height: 0.68333333rem;
+  position: absolute;
+  top: 0.18333333rem;
+  right: 3.5rem;
+}
+html footer #footer_last a,
+body footer #footer_last a {
+  text-decoration: none;
+}
+html footer #footer_last span,
+body footer #footer_last span {
+  position: absolute;
+  color: white;
+  font-size: 0.26666667rem;
+  right: 2.25rem;
+  top: 0.5rem;
+}
+html footer #footer_first,
+body footer #footer_first {
+  width: 50%;
+  height: 1.28333333rem;
+  float: left;
+  position: relative;
+}
+html footer #footer_first img,
+body footer #footer_first img {
+  width: 0.73333333rem;
+  height: 0.68333333rem;
+  position: absolute;
+  top: 0.18333333rem;
+  left: 3.08333333rem;
+}
+html footer #footer_first a,
+body footer #footer_first a {
+  text-decoration: none;
+}
+html footer #footer_first span,
+body footer #footer_first span {
+  position: absolute;
+  color: white;
+  font-size: 0.26666667rem;
+  left: 4.28333333rem;
+  top: 0.5rem;
+}

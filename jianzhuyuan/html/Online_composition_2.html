@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/Online_composition_2.css">
+</head>
+<body ng-controller="myCtrl">
+
+<header>
+    <div class="header">
+        <a href="" id="left"></a>
+        <span>总图及室外工程</span>
+    </div>
+</header>
+
+<content>
+    <div class="frame">
+        <div class="support">
+            <div ng-repeat="obj in arr.first.left track by $index">
+                <img ng-src="{{obj.img}}" alt="">
+                <p ng-bind="obj.name"></p>
+                <span ng-bind="obj.money"></span>
+                <del ng-bind="obj.money_no"></del>
+            </div>
+            <div ng-repeat="obj in arr.first.right track by $index">
+                <img ng-src="{{obj.img}}" alt="">
+                <p ng-bind="obj.name"></p>
+                <span ng-bind="obj.money"></span>
+                <del ng-bind="obj.money_no"></del>
+            </div>
+        </div>
+        <div class="support">
+            <div ng-repeat="obj in arr.second.left track by $index">
+                <img ng-src="{{obj.img}}" alt="">
+                <p ng-bind="obj.name"></p>
+                <span ng-bind="obj.money"></span>
+                <del ng-bind="obj.money_no"></del>
+            </div>
+            <div ng-repeat="obj in arr.second.right track by $index">
+                <img ng-src="{{obj.img}}" alt="">
+                <p ng-bind="obj.name"></p>
+                <span ng-bind="obj.money"></span>
+                <del ng-bind="obj.money_no"></del>
+            </div>
+        </div>
+        <div class="support">
+            <div ng-repeat="obj in arr.third.left track by $index">
+                <img ng-src="{{obj.img}}" alt="">
+                <p ng-bind="obj.name"></p>
+                <span ng-bind="obj.money"></span>
+                <del ng-bind="obj.money_no"></del>
+            </div>
+            <div ng-repeat="obj in arr.third.right track by $index">
+                <img ng-src="{{obj.img}}" alt="">
+                <p ng-bind="obj.name"></p>
+                <span ng-bind="obj.money"></span>
+                <del ng-bind="obj.money_no"></del>
+            </div>
+        </div>
+    </div>
+</content>
+
+<footer>
+    <div class="footer">
+        <a href="back_home.html"><img src="../img/img_house.png" alt="" class="home"></a>
+        <a href="back_home.html" class="home_write">首页</a>
+
+        <a href="atlas_information.html"><img src="../img/img_back.png" alt="" class="back"></a>
+        <a href="atlas_information.html" class="back_write">返回</a>
+    </div>
+</footer>
+
+<script src="../js/fontSize.js"></script>
+<!--<script src="../js/demo01.js"></script>-->
+<script src="../js/angular.min.js"></script>
+<script src="../js/angular-route1.4.5.js"></script>
+<script src="../js/jquery-3.1.1.js"></script>
+<script>
+    var app = angular.module("app", ["ngRoute"]);
+    app.controller("myCtrl", function ($scope, $http) {
+        $scope.arr = null;
+        $http.get("../data/data1.json").success(function (data) {
+//            console.log(data);
+            $scope.arr = data;
+//            console.log($scope.arr);
+//            console.log($scope.arr.first);
+//            console.log($scope.arr.first.left);
+            $.each($scope.arr.first.left, function (i, obj) {
+                console.log(obj)
+            });
+            $.each($scope.arr.first.right, function (i, obj) {
+                console.log(obj)
+            })
+//            console.log($scope.arr.first.right);
+        })
+    })
+</script>
+
+</body>
+</html>

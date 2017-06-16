@@ -1,0 +1,81 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+html ul,
+body ul,
+html ol,
+body ol {
+  list-style: disc;
+}
+content {
+  flex-grow: 1;
+  overflow: auto;
+  background-color: #aba9aa;
+}
+content #student img {
+  width: 100%;
+  height: 7.73333333rem;
+}
+content .frame {
+  height: 33.33333333rem;
+}
+content .frame .classification {
+  padding: 0.5rem 0.46666667rem;
+}
+content .frame .classification img {
+  width: 4.2rem;
+  height: 0.98333333rem;
+}
+content .frame .classification ul {
+  margin: 0.45rem 0.55rem;
+  font-size: 0.23333333rem;
+  line-height: 2;
+}
+content .frame .classification div {
+  width: 100%;
+  height: 1px;
+}
+footer .footer {
+  height: 1.28333333rem;
+  width: 100vw;
+  background-color: #0c1415;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.26666667rem;
+  line-height: 1.5;
+}
+footer .footer a {
+  text-decoration: none;
+}
+footer .footer .home {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.08333333rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+footer .footer .home_write {
+  position: absolute;
+  left: 4.28333333rem;
+  top: 0.41666667rem;
+  color: white;
+}
+footer .footer .back {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.85rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+footer .footer .back_write {
+  position: absolute;
+  left: 8.96666667rem;
+  top: 0.41666667rem;
+  color: white;
+}

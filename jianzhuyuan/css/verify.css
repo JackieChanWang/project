@@ -1,0 +1,164 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+}
+#remind {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#remind #picture {
+  width: 6.38333333rem;
+  height: 6.05rem;
+  background-color: #FFFFFF;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 5rem;
+  text-align: center;
+}
+#remind #picture #star {
+  width: 0.53333333rem;
+  height: 0.53333333rem;
+  position: absolute;
+  right: 0.18333333rem;
+  top: 0.16666667rem;
+  z-index: 22;
+}
+#remind #picture #close {
+  width: 0.71666667rem;
+  position: absolute;
+  left: 2.81666667rem;
+  top: 1.65rem;
+  height: 0.68333333rem;
+}
+#remind #picture p {
+  font-size: 0.46666667rem;
+  padding-left: 0.95rem;
+  padding-right: 0.95rem;
+  position: absolute;
+  top: 3.08333333rem;
+}
+#remind #picture p span {
+  color: red;
+}
+header {
+  text-align: center;
+  line-height: 1.5rem;
+  width: 100%;
+  color: #3076A7;
+  height: 1.5rem;
+  font-size: 0.58333333rem;
+  font-weight: 600;
+  border-bottom: 1px solid #B8B8B8;
+}
+content {
+  flex-grow: 1;
+  overflow: auto;
+  background-color: #E6E6E6;
+}
+content #attention {
+  width: 100%;
+  height: 2.6rem;
+  position: relative;
+  padding-bottom: 0.33333333rem;
+}
+content #attention img {
+  width: 0.31666667rem;
+  margin-left: 0.21666667rem;
+  height: 0.31666667rem;
+  margin-top: 0.66666667rem;
+}
+content #attention span {
+  font-size: 0.3rem;
+  color: #63080A;
+}
+content #attention p {
+  font-size: 0.3rem;
+  padding-top: 0.33333333rem;
+  color: black;
+  padding-left: 0.83333333rem;
+  padding-right: 0.7rem;
+}
+content form input {
+  margin-bottom: 0.5rem;
+  width: 90%;
+  margin-left: 5%;
+  height: 0.83333333rem;
+  background-color: transparent ;
+  border: 1px solid #C5C5C5;
+  outline: none;
+}
+content form #submit {
+  width: 90%;
+  margin-left: 5%;
+  height: 0.83333333rem;
+  color: white;
+  text-align: center;
+  line-height: 0.83333333rem;
+  background-color: #630709;
+  outline: none;
+}
+footer {
+  height: 1.28333333rem;
+  width: 100%;
+  background-color: #0C1415;
+  line-height: 1.5;
+}
+footer a {
+  text-decoration: none;
+}
+footer #footer_last {
+  width: 50%;
+  height: 1.28333333rem;
+  float: left;
+  position: relative;
+}
+footer #footer_last img {
+  width: 0.73333333rem;
+  height: 0.68333333rem;
+  position: absolute;
+  top: 0.18333333rem;
+  right: 3.45rem;
+}
+footer #footer_last a {
+  text-decoration: none;
+}
+footer #footer_last span {
+  position: absolute;
+  color: white;
+  font-size: 0.26666667rem;
+  right: 2.25rem;
+  top: 0.45rem;
+}
+footer #footer_first {
+  width: 50%;
+  height: 1.28333333rem;
+  float: left;
+  position: relative;
+}
+footer #footer_first img {
+  width: 0.73333333rem;
+  height: 0.68333333rem;
+  position: absolute;
+  top: 0.18333333rem;
+  left: 3.08333333rem;
+}
+footer #footer_first a {
+  text-decoration: none;
+}
+footer #footer_first span {
+  position: absolute;
+  color: white;
+  font-size: 0.26666667rem;
+  left: 4.28333333rem;
+  top: 0.5rem;
+}

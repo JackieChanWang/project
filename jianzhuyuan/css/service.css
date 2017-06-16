@@ -1,0 +1,161 @@
+a {
+  text-decoration: none;
+  color: #fffbc7;
+}
+body {
+  background: url("../img/img_backgroundimg.jpg") no-repeat;
+  height: 100vh;
+  background-size: 100% 100%;
+  position: relative;
+}
+.nav .logo {
+  width: 100vw;
+}
+.nav p {
+  font-size: 0.66666667rem;
+  color: #fffbc7;
+  margin-top: 2.58333333rem;
+  text-align: center ;
+}
+.content {
+  height: 5.68333333rem;
+  width: 9.75rem;
+  margin-top: 1.86666667rem;
+  margin-left: 1.06666667rem;
+  font-size: 0.38133333rem;
+  color: #fffbc7;
+}
+.content .content_top {
+  width: 9.75rem;
+  height: 1.86666667rem;
+  position: relative;
+}
+.content .content_top img {
+  height: 0.93333333rem;
+}
+.content .content_top .first {
+  float: left;
+  height: 1.86666667rem;
+  width: 1.61666667rem;
+}
+.content .content_top .first img {
+  margin-left: 0.4rem;
+}
+.content .content_top .first p {
+  margin-top: 0.51666667rem;
+}
+.content .content_top .line_first {
+  position: absolute;
+  top: 0.4rem;
+  left: 2.78333333rem;
+  width: 0;
+  height: 1.23333333rem;
+  border: 0.03333333rem solid #fffbc7;
+}
+.content .content_top .second {
+  float: left;
+  height: 1.86666667rem;
+  width: 1.61666667rem;
+  margin-left: 2.5rem;
+}
+.content .content_top .second img {
+  margin-left: 0.33333333rem;
+}
+.content .content_top .second p {
+  margin-top: 0.51666667rem;
+}
+.content .content_top .line_second {
+  position: absolute;
+  top: 0.4rem;
+  left: 6.91666667rem;
+  width: 0;
+  height: 1.23333333rem;
+  border: 0.03333333rem solid #fffbc7;
+}
+.content .content_top .third {
+  height: 1.86666667rem;
+  width: 1.61666667rem;
+  margin-left: 8.1rem;
+}
+.content .content_top .third img {
+  margin-left: 0.33333333rem;
+}
+.content .content_top .third p {
+  margin-top: 0.51666667rem;
+}
+.content .content_bottom {
+  height: 1.86666667rem;
+  width: 5.91666667rem;
+  margin-left: 1.98333333rem;
+  margin-top: 1.91666667rem;
+  position: relative;
+}
+.content .content_bottom img {
+  height: 1.11666667rem;
+}
+.content .content_bottom .first {
+  float: left;
+  height: 1.86666667rem;
+  width: 1.61666667rem;
+}
+.content .content_bottom .first img {
+  margin-left: 0.3rem;
+}
+.content .content_bottom .first p {
+  margin-top: 0.51666667rem;
+}
+.content .content_bottom .line_third {
+  position: absolute;
+  top: 0.4rem;
+  left: 2.96666667rem;
+  width: 0;
+  height: 1.23333333rem;
+  border: 0.03333333rem solid #fffbc7;
+}
+.content .content_bottom .second {
+  float: left;
+  height: 1.86666667rem;
+  width: 1.61666667rem;
+  margin-left: 2.5rem;
+}
+.content .content_bottom .second img {
+  margin-left: 0.3rem;
+}
+.content .content_bottom .second p {
+  margin-top: 0.51666667rem;
+}
+.footer {
+  height: 1.28333333rem;
+  width: 100vw;
+  background-color: #0c1415;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.26666667rem;
+  line-height: 1.5;
+}
+.footer .home {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.08333333rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+.footer .home_write {
+  position: absolute;
+  left: 4.28333333rem;
+  top: 0.41666667rem;
+  color: white;
+}
+.footer .back {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.85rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+.footer .back_write {
+  position: absolute;
+  left: 8.96666667rem;
+  top: 0.41666667rem;
+  color: white;
+}

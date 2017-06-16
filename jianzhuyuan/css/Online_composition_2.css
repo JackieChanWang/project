@@ -1,0 +1,110 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+header .header {
+  width: 100%;
+  height: 1.28333333rem;
+  background-color: #0c1415;
+  text-align: center;
+  position: relative;
+}
+header .header #left {
+  width: 0.4rem;
+  height: 0.5rem;
+  background-image: url("../img/fh.jpg");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0.5rem;
+  top: 0.33333333rem;
+}
+header .header span {
+  font-size: 0.26666667rem;
+  color: white;
+}
+content {
+  flex-grow: 1;
+  overflow: auto;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #e6e6e6;
+  padding: 0.36666667rem 0.28333333rem;
+}
+content .frame {
+  width: 100%;
+  height: 18rem;
+}
+content .frame .support {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.36666667rem 0.28333333rem;
+}
+content .frame .support div {
+  width: 4.86666667rem;
+  height: 4.63333333rem;
+  border: 1px solid #c7c7c7;
+  padding: 0.1rem;
+  text-align: center;
+}
+content .frame .support div img {
+  width: 4.66666667rem;
+  height: 3.08333333rem;
+}
+content .frame .support div p {
+  font-size: 0.21666667rem;
+}
+content .frame .support div span {
+  font-size: 0.18333333rem;
+  color: red;
+  position: relative;
+  top: -0.2rem;
+}
+content .frame .support div del {
+  font-size: 0.18333333rem;
+  color: #888888;
+  position: relative;
+  top: -0.2rem;
+}
+footer .footer {
+  height: 1.28333333rem;
+  width: 100vw;
+  background-color: #0c1415;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.26666667rem;
+  line-height: 1.5;
+}
+footer .footer a {
+  text-decoration: none;
+}
+footer .footer .home {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.08333333rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+footer .footer .home_write {
+  position: absolute;
+  left: 4.28333333rem;
+  top: 0.41666667rem;
+  color: white;
+}
+footer .footer .back {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.85rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+footer .footer .back_write {
+  position: absolute;
+  left: 8.96666667rem;
+  top: 0.41666667rem;
+  color: white;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"  ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route1.4.5.js"></script>
+    <script src="../js/fontSize.js"></script>
+    <title>Title</title>
+</head>
+<body ng-controller="myCtrl">
+<header>
+    <div class="information">
+        <img ng-src="{{str}}" alt="">
+        <span>{{str1}}</span>
+        <a href="">{{str0}}</a>
+    </div>
+</header>
+<content>
+    <div class="content_box">
+        <div class="login">
+            <div id="login_one">
+                <span>图集注册</span>
+                <span class="roll"></span>
+            </div>
+            <div id="login_two" >
+                <span>系列注册</span>
+                <span class="roll" style="display: none"></span>
+            </div>
+        </div>
+        <div class="attention" id="attention_one">
+            <div>
+                <img src="../img/img_xingkong.jpg" alt="">
+                <span>特别提示</span>
+                <p>系列图集请至系列注册操，否者无法获取双倍积分奖励</p>
+            </div>
+            <div>
+                <img src="../img/img_xingkong.jpg" alt="">
+                <span>特别提示</span>
+                <p>系列图集请至系列注册操，否者无法获取双倍积分奖励</p>
+            </div>
+            <div>
+                <img src="../img/img_xingkong.jpg" alt="">
+                <span>特别提示</span>
+                <p>系列图集请至系列注册操，否者无法获取双倍积分奖励</p>
+            </div>
+        </div>
+        <div class="attention" id="attention_two"style="display: none">
+            <div>
+                <img src="../img/img_xingkong.jpg" alt="">
+                <span>特别提示</span>
+                <p>亲,换了内容啦哈哈哈哈哈</p>
+            </div>
+            <div>
+                <img src="../img/img_xingkong.jpg" alt="">
+                <span>特别提示</span>
+                <p>系列图集请至系列注册操，否者无法获取双倍积分奖励</p>
+            </div>
+        </div>
+        <!--<form action="">-->
+        <div class="content_text">
+            <input type="text" placeholder="&nbsp;请输入书籍防伪码...">
+        </div>
+
+        <!--</form>-->
+        <div class="confirm">
+            <input type="button" value="确认提交    ">
+        </div>
+        <div class="history">
+            <img src="../img/img_xingkong.jpg" alt=""><span>最近图集积分历史</span>
+        </div>
+        <div class="last">
+            <div> <span>时间：</span><a href=""> 2014-09-11</a></div>
+            <div id="integral"> <span>积分：</span><a href=""> 10分</a></div>
+            <div id="name">
+                <span>图集名称：</span>
+                <a href="">混凝土结构排尿与构图(减肥减肥发卡卡哦从南昌</a>
+            </div>
+        </div>
+    </div>
+</content>
+<footer>
+    <div id="footer_first">
+        <a href="back_home.html"><img src="../img/img_house.png" alt=""></a>
+        <a href="back_home.html"><span>首页</span></a>
+    </div>
+    <div id="footer_last">
+        <a href="service.html"><img src="../img/img_back.png" alt=""></a>
+        <a href="service.html"><span>返回</span></a>
+    </div>
+</footer>
+<script src="../js/get.js"></script>
+<script src="../js/Reister.js"></script>
+</body>
+</html>

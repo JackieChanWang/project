@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/my_order.css">
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route1.4.5.js"></script>
+    <script src="../js/fontSize.js"></script>
+</head>
+<body ng-controller="myCtrl">
+<div class="header">
+    <div>
+        <img src="../img/img_touxiang.jpg" alt="">
+    </div>
+    <p>server_98765</p>
+</div>
+<section>
+    <div class="line"></div>
+    <div class="section_header">
+        <p>
+            <span class="my">我的订单</span>
+            <span>查看全部订单 &gt;</span>
+        </p>
+        <div>
+            <div>
+                <a href="shopping_cart.html"><img src="../img/img_book.jpg" alt=""></a>
+                <p>待付款</p>
+            </div>
+            <div>
+                <a href=""><img src="../img/img_house.jpg" alt=""></a>
+                <p>待发货</p>
+            </div>
+            <div>
+                <a href=""><img src="../img/img_car.jpg" alt=""></a>
+                <p>待收货</p>
+            </div>
+            <div>
+                <a href=""><img src="../img/img_hand.jpg" alt=""></a>
+                <p>全部</p>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="section_section">
+        <ul>
+            <li>会员服务</li>
+            <li>
+                <img src="../img/img_green.jpg" alt="">
+                <span class="words">图集注册</span>
+                <span style="color: #D1D1D1"><a href="register.html">&gt;</a></span>
+            </li>
+            <li>
+                <img src="../img/img_red.jpg" alt="">
+                <span class="words">积分查询</span>
+                <span style="color: #D1D1D1"><a href="integral.html">&gt;</a></span>
+            </li>
+            <li>
+                <img src="../img/img_blue.jpg" alt="">
+                <span class="words">活动公告</span>
+                <span><a href="upcoming_events.html">&gt;</a></span>
+            </li>
+            <li>
+                <img src="../img/img_orange.jpg" alt="">
+                <span class="words">更多服务</span>
+                <span><a href="more_services.html">&gt;</a></span>
+            </li>
+            <li>
+                <img src="../img/img_purple.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+</section>
+<div class="footer">
+    <a href="back_home.html"><img src="../img/img_house.png" class="home"></a>
+    <a href="back_home.html" class="home_write">首页</a>
+
+    <a href="myself.html"><img src="../img/img_back.png" class="back"></a>
+    <a href="myself.html" class="back_write">返回</a>
+</div>
+<!--<footer>
+    <a href="back_home.html" id="home"></a>
+    <span><a href="back_home.html">首页</a></span>
+    <a href="" id="back"></a>
+    <span><a href="">返回</a></span>
+</footer>-->
+<div ng-view=""></div>
+<script>
+    var app = angular.module("app", ["ngRoute"]);
+
+    app.config(["$routeProvider", function ($routeProvider) {
+        $routeProvider
+                .when("/one", {
+                    templateUrl: "shopping_cart.html"
+                })
+//                .when("/two", {
+//                    template: "<p>2222222</p>"
+//                })
+//                .when("/three", {
+//                    template: "<p>3333333</p>"
+//                })
+//                .when("/four", {
+//                    template: "<p>4444444</p>"
+//                })
+                .otherwise({
+                    redirectTo: "/gouwuche.html"
+                })
+    }])
+    app.controller("myCtrl", function ($scope, $http) {
+
+
+
+
+
+//        $http.get("../data/international_club.json").success(function (data) {
+////            console.log(data)
+//            $scope.obj = data
+//            console.log($scope.obj)
+//        })
+
+
+    })
+
+
+
+
+</script>
+</body>
+</html>

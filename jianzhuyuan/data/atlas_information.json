@@ -1,0 +1,31 @@
+{
+  "resan":"请求成功",
+  "title":"图集信息",
+  "fenlei":[
+    {
+      "id":"first",
+      "img":"../img/img_goutu.jpg",
+      "name":"在线购图"
+    },
+    {
+      "id":"second",
+      "img":"../img/img_xinxi.jpg",
+      "name":"新图信息"
+    },
+    {
+      "id":"third",
+      "img":"../img/img_diqiua.jpg",
+      "name":"发行网点"
+    },
+    {
+      "id":"fours",
+      "img":"../img/img_yanzheng.jpg",
+      "name":"图集验证"
+    },
+    {
+      "id":"five",
+      "img":"../img/img_jubao.jpg",
+      "name":"盗版举报"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/more_services.css">
+    <script src="../js/angular.min.js"></script>
+    <script src="../js/angular-route1.4.5.js"></script>
+    <script src="../js/fontSize.js"></script>
+    <script src="../js/jquery-3.1.1.js"></script>
+</head>
+<body ng-controller="myCtrl">
+<section>
+    <div class="header">
+        <p ng-bind="obj.title"></p></div>
+    <div class="main">
+        <div class="container">
+            <span ng-bind="obj.editor"></span>
+            <span ng-bind="obj.time"></span>
+            <span ng-bind="obj.views"></span>
+        </div>
+        <div class="content">
+            <p ng-bind="obj.txt_content"></p>
+            <div ng-repeat="item in obj.txt" class="text">
+                <p ng-bind="item.content"></p>
+            </div>
+        </div>
+        <p class="from" ng-bind="obj.form"></p>
+    </div>
+</section>
+<div class="footer">
+    <a href="back_home.html"><img src="../img/img_house.png" class="home"></a>
+    <a href="back_home.html" class="home_write">首页</a>
+
+    <a href="service.html"><img src="../img/img_back.png" class="back"></a>
+    <a href="service.html" class="back_write">返回</a>
+</div>
+<!--<footer>
+    <div>
+        <a href=""><img src="../img/shouye.png" alt=""></a>
+        <p><a href="">首页</a></p>
+    </div>
+    <div>
+        <a href="service.html"><img src="../img/fanhui.png" alt=""></a>
+        <p><a href="service.html">返回</a></p>
+    </div>
+</footer>-->
+<div ng-view=""></div>
+<script>
+    var app = angular.module("app", ["ngRoute"])
+
+    app.config(["$routeProvider", function ($routeProvider) {
+    }])
+    app.controller("myCtrl", function ($scope, $http) {
+
+        $http.get("../data/wisdom_city.json").success(function (data) {
+//            console.log(data)
+            $scope.obj = data
+            console.log($scope.obj)
+        })
+    })
+</script>
+</body>
+</html>

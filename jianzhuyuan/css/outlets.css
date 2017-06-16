@@ -1,0 +1,93 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/img_bg.jpg");
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+section {
+  flex-grow: 1;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.83333333rem;
+}
+section header {
+  line-height: 1.86666667rem;
+  font-size: 0.56666667rem;
+  text-align: center;
+  color: #045499;
+  font-weight: 600;
+}
+section .north_China {
+  margin-left: 0.5rem;
+  margin-top: 1.3rem;
+  font-size: 0.33333333rem;
+}
+section .north_China .area {
+  margin-left: 0.23333333rem;
+  width: 1.43333333rem;
+  height: 1.43333333rem;
+}
+section .north_China .under {
+  margin-left: 0.26666667rem;
+  width: 0.33333333rem;
+  height: 0.33333333rem;
+}
+section .north_China .imgs {
+  display: block;
+  margin-top: 0.46666667rem;
+}
+section .north_China .imgs div {
+  width: 33%;
+  float: left;
+  text-align: center;
+  margin-top: 0.2rem;
+  font-size: 0.36666667rem;
+  line-height: 1.5;
+}
+section .north_China .imgs div img {
+  width: 2.23333333rem;
+  height: 2.23333333rem;
+}
+.footer {
+  height: 1.28333333rem;
+  width: 100vw;
+  background-color: #0c1415;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.26666667rem;
+  line-height: 1.5;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer .home {
+  width: 0.73333333rem;
+  height: 0.68333333rem;
+  margin-left: 3.08333333rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+.footer .home_write {
+  position: absolute;
+  left: 4.28333333rem;
+  top: 0.41666667rem;
+  color: white;
+}
+.footer .back {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.85rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+.footer .back_write {
+  position: absolute;
+  left: 8.96666667rem;
+  top: 0.41666667rem;
+  color: white;
+}

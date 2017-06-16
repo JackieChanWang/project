@@ -1,0 +1,31 @@
+{
+  "resan":"请求成功",
+  "title":"会员服务",
+  "fenlei":[
+    {
+      "id":"first",
+      "img":"../img/img_zhucea.jpg",
+      "name":"会员注册"
+    },
+    {
+      "id":"second",
+      "img":"../img/img_tujia.jpg",
+      "name":"图集注册"
+    },
+    {
+      "id":"third",
+      "img":"../img/img_qian.jpg",
+      "name":"积分查询"
+    },
+    {
+      "id":"fours",
+      "img":"../img/img_c.jpg",
+      "name":"活动公告"
+    },
+    {
+      "id":"five",
+      "img":"../img/img_d.jpg",
+      "name":"更多服务"
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  width: 12rem;
+  height: 5rem;
+  display: flex;
+  background-image: url("../img/img_jf.jpg");
+  background-size: 100% 100%;
+}
+header div {
+  margin-left: 0.5rem;
+  margin-top: 1.43333333rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 1px solid #000;
+}
+header div img {
+  width: 100%;
+  height: 100%;
+}
+header p {
+  margin-left: 0.6rem;
+  margin-top: 3.33333333rem;
+  font-size: 0.23333333rem;
+}
+section {
+  flex-grow: 1;
+  overflow: auto;
+  background-color: #E6E6E6;
+}
+section .Introduction {
+  margin-top: 0.43333333rem;
+  border-top: 1px solid #B1B1B1;
+  border-bottom: 1px solid #B1B1B1;
+  background-color: #fff;
+}
+section .Introduction .top {
+  height: 3.2rem;
+  font-size: 0.33333333rem;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 1.8;
+  border-bottom: 1px solid #E0E0E0;
+}
+section .Introduction .top div input {
+  display: none;
+}
+section .Introduction .top div label {
+  display: block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+section .Introduction .top div input:checked + label {
+  background-color: #FF5000;
+}
+section .Introduction .top img {
+  width: 1.93333333rem;
+  height: 1.36666667rem;
+}
+section .Introduction .top .words {
+  font-size: 0.36666667rem;
+}
+section .Introduction .top .price li:last-child {
+  color: #8A8A8A;
+  border: none;
+}
+section .Introduction .top .price li:last-child span:first-child {
+  color: #6FA6B9;
+}
+section .Introduction .top .price li:last-child span:last-of-type {
+  border: 1px solid #DDDDDD;
+}
+section .Introduction .top .price li:last-child .Less {
+  width: 0.43333333rem;
+  height: 0.43333333rem;
+  font-size: 0.33333333rem;
+  border: none;
+  background-color: #F35110;
+}
+section .Introduction .top .price li:last-child .plus {
+  width: 0.43333333rem;
+  height: 0.43333333rem;
+  font-size: 0.33333333rem;
+  border: none;
+  background-color: #3EBF03;
+}
+section .Introduction .Pieces {
+  font-size: 0.33333333rem;
+  height: 1.26666667rem;
+  display: flex;
+  align-items: center;
+  justify-content: inherit;
+  padding: 0 0.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid #EEEEEE;
+}
+section .Introduction .Pieces .img {
+  flex-grow: 1;
+}
+section .Introduction .Pieces .img img {
+  width: 0.46666667rem;
+  height: 0.63333333rem;
+}
+section .Introduction .Pieces div {
+  display: flex;
+}
+section .Introduction .Pieces div p:last-of-type {
+  margin-left: 0.5rem;
+  color: #999;
+}
+section .Introduction .Pieces div span {
+  color: red;
+}
+footer {
+  /*.footer{
+    height: 77/@fs;
+    width: 100vw;
+    background-color: #0c1415;
+    position: fixed;
+    bottom: 0;
+    font-size: 16/@fs;
+    line-height: 1.5;
+    a{
+      text-decoration: none;
+    }
+    .home{
+      width: 44/@fs;
+      height: 41/@fs;
+      margin-left: 185/@fs;
+      margin-top: 11/@fs;
+      position: relative;
+    }
+    .home_write{
+      position: absolute;
+      left: 257/@fs;
+      top: 25/@fs;
+      color: white;
+
+    }
+
+    .back{
+      height: 41/@fs;
+      width: 44/@fs;
+      margin-left: 231/@fs;
+      margin-top: 11/@fs;
+      position: relative;
+    }
+    .back_write{
+      position: absolute;
+      left: 538/@fs;
+      top: 25/@fs;
+      color: white;
+
+    }
+  }*/
+}
+footer .Settlement {
+  height: 1.9rem;
+  background-color: #EFEFEF;
+  border-top: 1px solid #CBCBCB;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .Settlement div {
+  font-size: 0.46666667rem;
+  line-height: 1.5;
+}
+footer .Settlement div span {
+  margin-left: 0.26666667rem;
+  margin-bottom: 0.5rem;
+}
+footer .Settlement div input {
+  display: none;
+}
+footer .Settlement div label {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+footer .Settlement div input:checked + label {
+  background-color: #FF5000;
+}
+footer .Settlement .mony p:first-child {
+  color: #FD6018;
+  font-weight: 600;
+}
+footer .Settlement .mony p:last-of-type {
+  text-align: right;
+}
+footer .Settlement div:last-of-type p {
+  height: 1.46666667rem;
+  width: 2.8rem;
+  background-color: #FD6018;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.46666667rem;
+}
+footer .footer {
+  width: 100%;
+  height: 1.28333333rem;
+  background-color: #0c1415;
+  position: relative;
+  text-align: center;
+}
+footer .footer #home {
+  width: 0.75rem;
+  height: 0.68333333rem;
+  background-image: url("../img/shouye.png");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 3.08333333rem;
+  top: 0.18333333rem;
+}
+footer .footer #back {
+  width: 0.73333333rem;
+  height: 0.68333333rem;
+  background-image: url("../img/houtui.png");
+  background-size: 100% 100%;
+  position: absolute;
+  left: 8.33333333rem;
+  line-height: 1.5;
+  top: 0.18333333rem;
+}
+footer .footer span a {
+  font-size: 0.26666667rem;
+  color: white;
+  text-decoration: none;
+}
+footer .footer span:nth-of-type(1) {
+  position: relative;
+  left: -0.66666667rem;
+  top: -0.1rem;
+}
+footer .footer span:nth-of-type(2) {
+  position: relative;
+  left: 3.25rem;
+  top: -0.1rem;
+}

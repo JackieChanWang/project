@@ -1,0 +1,207 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+header {
+  width: 12rem;
+  height: 5rem;
+  display: flex;
+  background-image: url("../img/img_jf.jpg");
+  background-size: 100% 100%;
+}
+header div {
+  margin-left: 0.5rem;
+  margin-top: 1.43333333rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 1px solid #000;
+}
+header div img {
+  width: 100%;
+  height: 100%;
+}
+header p {
+  margin-left: 0.6rem;
+  margin-top: 3.33333333rem;
+  font-size: 0.23333333rem;
+}
+section {
+  flex-grow: 1;
+  overflow: auto;
+  background-color: #E6E6E6;
+}
+section .line {
+  border-top: 1px solid #B1B1B1;
+  border-bottom: 1px solid #B1B1B1;
+  height: 0.43333333rem;
+  background-color: #E6E6E6;
+}
+section .section_header ul {
+  font-size: 0.45rem;
+  display: flex;
+  height: 1.33333333rem;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 600;
+  color: #424345;
+}
+section .section_header ul li:first-child {
+  color: #3076A7;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  border-bottom: 2px solid #3076A7;
+}
+section .section_header ul li:nth-child(2) {
+  color: #3076A7;
+  height: 1.33333333rem;
+  line-height: 1.33333333rem;
+  border-bottom: 2px solid #3076A7;
+}
+section .section_section {
+  background-color: #fff;
+}
+section .section_section .half {
+  height: 2.86666667rem;
+  font-size: 0.33333333rem;
+  display: flex;
+  font-weight: 600;
+  align-items: center;
+  justify-content: space-around;
+  line-height: 1.8;
+  border-bottom: 1px solid #E0E0E0;
+}
+section .section_section .half img {
+  width: 1.93333333rem;
+  height: 1.36666667rem;
+}
+section .section_section .half .words {
+  font-size: 0.36666667rem;
+}
+section .section_section .half .price li:last-child {
+  color: #8A8A8A;
+}
+section .section_section .piece {
+  font-size: 0.33333333rem;
+  display: flex;
+  height: 1.26666667rem;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+  font-weight: 600;
+  border-bottom: 1px solid #EEEEEE;
+}
+section .section_section .piece p:last-of-type {
+  margin-left: 0.5rem;
+  color: #999;
+}
+section .section_section .piece span {
+  color: red;
+}
+section .section_footer {
+  display: flex;
+  height: 1.83333333rem;
+  background-color: #fff;
+  justify-content: flex-end;
+  align-items: center;
+}
+section .section_footer button {
+  font-weight: 600;
+  height: 0.93333333rem;
+  width: 2.4rem;
+  background-color: #fff;
+  border: 1px solid #616163;
+}
+section .section_footer button:first-child {
+  margin-right: 0.4rem;
+}
+section .section_footer button:last-of-type {
+  color: #DA5F1C;
+  margin-right: 0.16666667rem;
+  border: 1px solid #DA5F1C;
+}
+/*
+footer {
+  width: 100%;
+  height: 60/ @fs;
+  background-color: #0c1415;
+  position: relative;
+  text-align: center;
+  #home {
+    width: 45/ @fs;
+    height: 45/@fs;
+    background-image: url("../img/shouye.png");
+    background-size: 100% 100%;
+    position: absolute;
+    left: 100/@fs;
+    top: 8/@fs;
+  }
+  #back {
+    width: 50/ @fs;
+    height: 45/@fs;
+    background-image: url("../img/houtui.png");
+    background-size: 100% 100%;
+    position: absolute;
+    left: 475/@fs;
+    top: 10/@fs;
+  }
+  span {
+    a {
+      font-size: 16/@fs;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  span:nth-of-type(1) {
+    position: relative;
+    left: -110/@fs;
+    top: -12/@fs;
+  }
+  span:nth-of-type(2) {
+    position: relative;
+    left: 3.2rem;
+    top: -12/@fs;
+  }
+}*/
+.footer {
+  height: 1.28333333rem;
+  width: 100vw;
+  background-color: #0c1415;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.26666667rem;
+  line-height: 1.5;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer .home {
+  width: 0.73333333rem;
+  height: 0.68333333rem;
+  margin-left: 3.08333333rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+.footer .home_write {
+  position: absolute;
+  left: 4.28333333rem;
+  top: 0.41666667rem;
+  color: white;
+}
+.footer .back {
+  height: 0.68333333rem;
+  width: 0.73333333rem;
+  margin-left: 3.85rem;
+  margin-top: 0.18333333rem;
+  position: relative;
+}
+.footer .back_write {
+  position: absolute;
+  left: 8.96666667rem;
+  top: 0.41666667rem;
+  color: white;
+}
