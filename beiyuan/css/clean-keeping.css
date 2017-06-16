@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #190d07;
+}
+.header {
+  height: 1.8rem;
+  background-color: #190d07;
+  position: relative;
+}
+.header .back {
+  width: 0.54rem;
+  position: absolute;
+  left: 0.64rem;
+  top: 0.44rem;
+}
+.header .catalogue {
+  width: 0.94rem;
+  position: absolute;
+  right: 0.64rem;
+  top: 0.44rem;
+}
+.date {
+  background-color: #fff;
+  font-size: 0.4rem;
+  text-align: center;
+}
+table {
+  height: 7.8rem;
+  background-color: white;
+  width: 15rem;
+  font-size: 0.4rem;
+  text-align: center;
+}
+footer #data {
+  color: #fff;
+}
+footer #data div {
+  display: flex;
+  margin-left: 0.4rem;
+  margin-top: 0.4rem;
+}
+footer #data div p {
+  font-size: 0.5rem;
+}
+footer #data div span {
+  position: relative;
+  left: 0.5rem;
+  opacity: 0.8;
+  font-size: 0.5rem;
+  line-height: 1.5;
+  width: 75%;
+}

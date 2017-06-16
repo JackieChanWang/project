@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  background-color: #f4f5f6;
+}
+.header {
+  height: 1.8rem;
+  background-color: #190d07;
+  position: relative;
+}
+.header .catalogue {
+  width: 0.94rem;
+  position: absolute;
+  right: 0.64rem;
+  top: 0.44rem;
+}
+content #banner {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  position: relative;
+  overflow: hidden;
+}
+content #banner .ul {
+  width: 300%;
+  display: flex;
+  transition: 1s;
+  overflow: hidden;
+}
+content #banner .ul li {
+  width: 15rem;
+  overflow: hidden;
+}
+content #banner .ul li img {
+  width: 15rem;
+  float: left;
+}
+content #banner .ol {
+  position: absolute;
+  left: 6.32rem;
+  bottom: 0.4rem;
+}
+content #banner .ol li {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  float: left;
+  margin-right: 0.56rem;
+}
+#nav {
+  padding: 0.4rem 0.56rem;
+  background-color: #F4F5F6;
+}
+#mainbav #subnav {
+  background-color: white;
+  border-radius: 0.2rem;
+  display: flex;
+  justify-content: space-around;
+}
+#mainbav #subnav div {
+  padding: 0.3rem 0.4rem;
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: 600;
+  color: #828282;
+}
+#mainbav #subnav div p {
+  color: #666666;
+}
+#mainbav #subnav div img {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+.footer {
+  padding: 0 0.4rem 0.56rem;
+}
+.footer_title {
+  border-radius: 0.2rem;
+  background-color: white;
+  font-size: 0.52rem;
+  padding: 0.4rem 0.56rem;
+}
+.footer_title .line {
+  margin-top: 0.4rem;
+  border-bottom: 0.02rem solid #d6d6d6;
+}
+.footer_title .content {
+  display: flex;
+  background-color: white;
+  margin-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 0.02rem solid #d6d6d6;
+}
+.footer_title .content img {
+  width: 3.6rem;
+  height: 2.6rem;
+}
+.footer_title .content .summary {
+  margin-left: 0.5rem;
+}
+.footer_title .content .summary h3 {
+  font-size: 0.5rem;
+}
+.footer_title .content .summary p {
+  color: #555;
+  font-size: 0.4rem;
+  margin-top: 0.2rem;
+}

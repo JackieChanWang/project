@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/clean-keeping.css">
+</head>
+<body>
+<content>
+    <div class="header">
+        <a href="submenu.html"><img src="../img/left.png" alt="" class="back"></a>
+        <img src="../img/right.png" alt="" class="catalogue">
+    </div>
+    <div class="date">商务餐厅(4月17号-4月21号)</div>
+    <table border="1" cellspacing="0" style="text-align: center">
+        <tr>
+            <td colspan="2" class="week"></td>
+        </tr>
+        <!--<tr>
+            <th>星期</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>汤</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>疙瘩汤</td>
+            <td>2元一碗</td>
+        </tr>-->
+    </table>
+</content>
+<footer></footer>
+<script src="../js/fontSize.js"></script>
+<script src="../js/jquery-3.1.1.js"></script>
+<script src="../js/clean-keeping.js"></script>
+<script src="../js/md5.js"></script>
+<script>
+
+    var contentUrl = 'http://101.200.35.33:8086/byxzl-proxy/';
+    var sign = $.md5('type=10A&type=z3vDWPT2T1atzP2N').toUpperCase();
+    console.log(sign);
+    $.ajax({
+        url: contentUrl + "menuList.app",
+        data: {
+            type: "10A"
+        },
+        success: function (data) {
+            console.log(data);
+            console.log(data.data);
+            var str = "";
+            var str1 = "";
+            var time = new Date();
+            var week = time.getDay();
+            str1 += week;
+            console.log(week);
+            $("table .week").html('星期' + str1);
+            for (var i in data.data) {
+                if (data.data[i].week == week) {
+                    str += "<tr><td>" + data.data[i].foodName + "</td><td>" + data.data[i].price + "</td></tr>"
+                }
+            }
+            $("table").append(str)
+        }
+    });
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  height: 1.8rem;
+  background-color: #190d07;
+  position: relative;
+}
+.header .back {
+  width: 0.54rem;
+  position: absolute;
+  left: 0.64rem;
+  top: 0.44rem;
+}
+.header .catalogue {
+  width: 0.94rem;
+  position: absolute;
+  right: 0.64rem;
+  top: 0.44rem;
+}
+section {
+  height: 100%;
+}
+.center {
+  height: 3.7rem;
+  width: 15rem;
+  background-color: #190d07;
+}
+.center .repair {
+  margin-left: 1.94rem;
+  width: 11.2rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 0.02rem solid #ffffff;
+}
+.center .repair .project {
+  font-size: 0.5rem;
+  color: #919090;
+}
+.center .repair .form {
+  border: none;
+  background-color: #190D07;
+  outline: 0;
+  font-size: 0.7rem;
+  margin-top: 0.4rem;
+  color: #4E4E4E;
+}
+section .button .rendering {
+  border: none;
+  background-color: #fff;
+  outline: 0;
+  font-size: 0.7rem;
+  margin-top: 0.4rem;
+  color: #4E4E4E;
+}
+section .button .rendering .form {
+  border: none;
+  background-color: #fff;
+  outline: 0;
+  font-size: 0.7rem;
+  color: #4E4E4E;
+}
+section {
+  height: 100%;
+}
+section .section_form {
+  height: 92%;
+}
+section .button {
+  margin-left: 1.94rem;
+  margin-top: 0.4rem;
+}
+section .button div {
+  height: 2.3rem;
+  width: 11.2rem;
+  border-bottom: 0.02rem solid #e8e8e8;
+}
+section .button .requirement {
+  margin-top: 0.4rem;
+  font-size: 0.5rem;
+}
+/*.questions{
+  height: 60%;
+}*/
+section .button .figure {
+  border: none;
+}
+section .button .figure .rendering {
+  height: 2.2rem;
+  width: 2.2rem;
+  margin-top: 0.4rem;
+  background: url("../img/figure.png") no-repeat;
+  background-size: 100% 100%;
+}
+section .button .figure .rendering input {
+  display: inline-block;
+  opacity: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+section footer {
+  width: 2.6rem;
+  height: 2.6rem;
+  background: url("../img/replace.png") no-repeat;
+  background-size: 2.6rem 2.6rem;
+  margin: 3.6rem auto;
+}
+section footer p {
+  opacity: 0;
+  width: 2.6rem;
+  height: 2.6rem;
+}

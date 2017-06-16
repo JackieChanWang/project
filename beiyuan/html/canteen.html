@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="../css/canteen.css">
+</head>
+<body>
+<section>
+    <div class="header">
+        <a href="submenu.html"><img src="../img/left.png" alt="" class="back"></a>
+        <img src="../img/right.png" alt="" class="catalogue">
+    </div>
+    <form action="" method="post">
+        <div class="container">
+            <div class="service">
+                <p class="answer">需要什么服务？</p>
+                <input type="text" class="idea" id="type" placeholder="办公室保洁">
+            </div>
+        </div>
+        <div class="questions">
+            <div class="time">
+                <p class="request">时间要求</p>
+                <p class="answers"><input type="text" class="idea" id="time" placeholder="预约于今天12:30"></p>
+            </div>
+            <div class="mission">
+                <p class="request">任务位置</p>
+                <p class="answers"><input type="text" class="idea" id="place" placeholder="6层601(天赋集团)"></p>
+            </div>
+            <div class="explain">
+                <p class="request">补充说明</p>
+                <p class=""><input type="text" class="idea" id="remark" placeholder="选填，可以在此补充说明细节"></p>
+            </div>
+            <div class="place">
+                <p class="request">附图</p>
+                <div class="illustrate">
+                    <input type="file">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p id="submit"></p>
+        </footer>
+    </form>
+</section>
+<script src="../js/fontSize.js"></script>
+<script src="../js/jquery-3.1.1.js"></script>
+<!--<script src="../js/canteen.js"></script>-->
+<script src="../js/md5.js"></script>
+<script>
+    $(function () {
+        var contentUrl = 'http://101.200.35.33:8086/byxzl-proxy/';
+        var sign = $.md5('type=10A&key=z3vDWPT2T1atzP2N').toUpperCase();
+//                    console.log(sign);
+         /*$.ajax({
+            url: contentUrl + 'addService.app',
+            data: {
+                type: "10A",
+                sign: sign
+            },
+            success: function (data) {
+                console.log(data);
+
+                var str = '';
+
+
+                /!*var width = screen.width;
+                 var ul = $(".ul");
+                 var len = $(".ul li").length;
+                 var index = 0;
+                 ul.swipeLeft(function () {
+                 index++;
+                 if (index == len) {
+                 index--
+                 }
+                 ul.css("transform", "translateX(-" + width * index + "px)");
+                 $(".ol li").eq(index).css("backgroundColor", "red").siblings().css("backgroundColor", "#fff")
+                 })
+                 ul.swipeRight(function () {
+                 index--;
+                 if (index == len) {
+                 index++
+                 }
+                 ul.css("transform", "translateX(-" + width * index + "px)");
+                 $(".ol li").eq(index).css("backgroundColor", "red").siblings().css("backgroundColor", "#fff")
+                 })*!/
+            }
+        })*/
+
+        $("#submit").click(function () {
+            $.ajax({
+                type: "POST",
+                url: "http://101.200.35.33:8086/byxzl-proxy/addService.app",
+                data: {
+                    type: $("#type").val(),
+                    time: $("#time").val(),
+                    place: $("#place").val(),
+                    remark: $("#remark").val()
+//                    send: $("#send").val()
+                },
+                dataType: "json",
+                success: function (data) {
+                    alert("请求已提交！我们会尽快与您取得联系");
+                    console.log(data)
+                },
+                error: function (message) {
+                    alert("提交数据失败！");
+                }
+            });
+        });
+    });
+
+
+</script>
+</body>
+</html>
